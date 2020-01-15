@@ -1,21 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-
-
 
 void historiawyswietl()
 {
     int n=3;
+
     int liczba=0;
     char imie[20];
+
     FILE *plik;
     plik = fopen("historiawynik.txt","r");
-    fscanf(plik,"%d",&liczba);
-     fclose(plik);
-     plik = fopen("historiaimie.txt","r");
-    fscanf(plik,"%s",imie);
-     fclose(plik);
+        fscanf(plik,"%d",&liczba);
+    fclose(plik);
+    plik = fopen("historiaimie.txt","r");
+        fscanf(plik,"%s",imie);
+    fclose(plik);
+
     while(n!=0)
     {
         naglowek();

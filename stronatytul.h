@@ -1,4 +1,4 @@
-#include <stdlib.h>
+
 void menu()
 {
     printf("  -------------------------------------------\n");
@@ -13,5 +13,5 @@ void menu()
     printf("  |           ___________________           |\n");
     printf("  |          | Mateusz Redzimski |          |\n");
     printf("  -------------------------------------------\n");
-return 0;
+return;
 }

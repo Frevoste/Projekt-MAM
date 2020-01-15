@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+
 int odejmowanie(int poziom)
 {
     printf("\n");
@@ -10,12 +8,12 @@ int odejmowanie(int poziom)
     int pierwsza=ziarenko-13;
     int druga=ziarenko*2-2;
     printf("  %d - %d = ?  \n",pierwsza,druga);
+    if(poziom=1)
     printf("***  %d  ***\n",pierwsza-druga);
     scanf("%d",&wynik);
     printf("\n");
     if(wynik==pierwsza-druga)
     {
-
         return 1;
     }
     else

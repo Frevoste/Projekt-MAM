@@ -12,11 +12,9 @@
 #include"mnozenie.h"
 #include"historiawyswietl.h"
 #include"historiazapis.h"
-
-
 int main()
 {
-    int wybor=2;
+    int wybor=0;
     while(wybor!=3)
     {
         naglowek();
@@ -35,7 +33,6 @@ int main()
                     printf("Podaj poziom trudnosci od 1 do nieskonczonosci: ");
                     scanf("%d",&poziom);
                 }
-
                 nowagra(poziom);
             }
             break;
@@ -44,9 +41,7 @@ int main()
               historiawyswietl();
             }
             break;
-
         }
     }
-
-    return 0;
+return 0;
 }

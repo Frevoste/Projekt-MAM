@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 struct Gracz
 {
     char imie[20];
