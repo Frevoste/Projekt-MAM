@@ -7,9 +7,9 @@ int odejmowanie(int poziom)
     int ziarenko=losowa(poziom);
     int pierwsza=ziarenko-13;
     int druga=ziarenko*2-2;
-    printf("  %d - %d = ?  \n",pierwsza,druga);
-    if(poziom=1)
-    printf("***  %d  ***\n",pierwsza-druga);
+    printf("              %d - %d = ?  \n",pierwsza,druga);
+    if(poziom==1)
+    printf("        ***  %d  ***\n",pierwsza-druga);
     scanf("%d",&wynik);
     printf("\n");
     if(wynik==pierwsza-druga)

@@ -21,8 +21,17 @@ int nowagra(int poziom)
             szanse=szanse-1;
         }
 
-        printf("  [  ZDOBYTE PUNKTY: %d ]\n",punkty);
-        printf("  [ POZOSTALE SZANSE: %d ]\n",szanse);
+        printf("  /----------[  ZDOBYTE PUNKTY  ]-----------\\\n");
+        printf("  |              [  %6d  ]               |      \n",punkty);
+        printf("  |                                         |\n");
+        printf("  |         [  POZOSTALE SZANSE  ]          |\n");
+        printf("  |                 [  %d  ]                 |\n",szanse);
+        printf("  |                                         |\n");
+        printf("  |              [  POZIOM  ]               |\n");
+        printf("  |               [  %4d  ]                |\n",poziom);
+        printf("  |                                         |\n");
+        printf("  \\--------------[  ZADANIE  ]--------------/\n");
+        printf("\t\t");
 
         if (ziarno<=25)
             x=dodawanie(poziom);
@@ -32,8 +41,8 @@ int nowagra(int poziom)
             x=dzielenie(poziom);
         else if(ziarno<=100)
             x=odejmowanie(poziom);
-
         naglowek();
+        poziom=poziom+1;
     }
     historiazapis(punkty);
 }

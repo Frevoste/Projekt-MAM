@@ -41,6 +41,13 @@ int main()
               historiawyswietl();
             }
             break;
+            case 3:
+            {
+
+                naglowek();
+                printf("     [    DZIEKUJE WSZYSTKIM ZA UWAGE    ]  \n\n\n");
+            }
+            break;
         }
     }
 return 0;
