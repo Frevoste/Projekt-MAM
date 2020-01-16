@@ -28,12 +28,10 @@ int main()
             case 1:
             {
                 int poziom=-1;
-                naglowek();
-                printf("Podaj poziom trudnosci od 1 do 100: ");
                 while(poziom<1||poziom>100)
                 {
                     naglowek();
-                    printf("Podaj poziom trudnosci od 1 do nieskonczonosci: ");
+                    printf("Podaj poziom trudnosci od 1 do 100: ");
                     scanf("%d",&poziom);
                 }
                 nowagra(poziom);
@@ -46,7 +44,6 @@ int main()
             break;
             case 3:
             {
-
                 naglowek();
                 printf("     [    DZIEKUJE WSZYSTKIM ZA UWAGE    ]  \n\n\n");
             }
