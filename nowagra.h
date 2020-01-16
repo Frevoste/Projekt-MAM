@@ -1,3 +1,10 @@
+int losowa(int);
+int dodawanie(int);
+int mnozenie(int);
+int dzielenie(int);
+int odejmowanie(int);
+int historiazapis(int);
+
 
 int nowagra(int poziom)
 {
@@ -13,7 +20,7 @@ int nowagra(int poziom)
         if (x==1)
         {
             printf("  [  ZYSKUJESZ %d PUNKTOW.  ]   \n \n",dmg);
-            punkty=punkty+10;
+            punkty=punkty+10+2*poziom;
         }
         else if (x==0)
         {

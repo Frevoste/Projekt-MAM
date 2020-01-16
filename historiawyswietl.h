@@ -7,10 +7,19 @@ void historiawyswietl()
     char imie[20];
 
     FILE *plik;
-    plik = fopen("historiawynik.txt","r");
+    if ((plik = fopen("historiawynik.txt","r")) == NULL)
+    {
+        printf("NIE MA TAKIEGO PLIKU");
+        exit(1);
+    }
         fscanf(plik,"%d",&liczba);
     fclose(plik);
-    plik = fopen("historiaimie.txt","r");
+    if ((plik = fopen("historiaimie.txt","r")) == NULL)
+    {
+        printf("NIE MA TAKIEGO PLIKU");
+        exit(1);
+    }
+
         fscanf(plik,"%s",imie);
     fclose(plik);
 
@@ -30,5 +39,5 @@ void historiawyswietl()
     scanf("%d",&n);
     }
 
-    return 0;
+    return;
 }
